@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Convite de Aniversário do Arthur</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      text-align: center;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .section {
+      padding: 20px 20px;
+    }
+
+    .section.video {
+      background-color: #fff8dc;
+    }
+
+    .section.info {
+      background-color: #e0f7fa;
+      position: relative;
+    }
+
+    .section.countdown {
+      background-color: #ffe0f0;
+    }
+
+    .section.info h1 {
+      font-size: 3em;
+      color: #ff6f61;
+      margin: 0;
+    }
+
+    .section.info h2 {
+      font-size: 2em;
+      color: #4fc3f7;
+      margin-top: 10px;
+    }
+
+    .gifs {
+      margin-top: 20px;
+    }
+
+    .gifs img {
+      width: 100px;
+      margin: 10px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .map-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background-color: #ffd54f;
+      color: #000;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s;
+    }
+
+    .map-button:hover {
+      background-color: #fff176;
+    }
+
+    .map-button + .map-button {
+      margin-left: 15px;
+    }
+
+    video {
+      width: 80%;
+      max-width: 1000px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+
+    .countdown-box {
+      font-size: 2em;
+      color: #ff4081;
+      margin-top: 30px;
+    }
+
+    .countdown-box span {
+      font-weight: bold;
+    }
+
+  /*  .carousel {
+      width: 90%;
+      max-width: 600px;
+      margin: 30px auto;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }*/
+
+.carousel {
+    width: 300px; /* Certifique-se de que a largura e a altura sejam iguais */
+    height: 300px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 50%; /* Deixa o carrossel redondo */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2); /* Mantém a sombra estilosa */
+    background-color: #f0f0f0; /* Cor de fundo, opcional */
+}
+
+    .slides {
+      display: flex;
+      width: 400%;
+      animation: slide 0s infinite;
+    }
+
+    .slides img {
+      width: 25%;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0%); }
+      33% { transform: translateX(0%); }
+      36% { transform: translateX(-100%); }
+      66% { transform: translateX(-100%); }
+      69% { transform: translateX(-200%); }
+      99% { transform: translateX(-200%); }
+      100% { transform: translateX(0%); }
+    }
+
+.gifs {
+     }
+
+.gif-direito {
+    position: absolute;
+    top: 0;
+    right: 0;
+padding:20px;
+
+    width: 130px; /* Ajuste para o tamanho do GIF */
+    height: auto;
+}
+
+.gif-esquerdo {
+    position: absolute;
+    top: 0;
+    left: 0;
+padding:20px;
+
+    width: 130px; /* Ajuste para o tamanho do GIF */
+    height: auto;
+}
+
+.gif-dir {
+    position: absolute;
+  top: 0;
+    left: 0;
+
+
+    width: 130px; /* Ajuste para o tamanho do GIF */
+    height: auto;
+}
+
+
+        .bridge {
+            font-family: 'Arial', sans-serif;
+            font-size: 60px;
+            font-weight: bold;
+            color: #1e90ff;
+            text-shadow: 2px 2px 8px #4682b4;
+            animation: pulse 1.5s infinite ease-in-out;
+        }
+
+        .bridge span {
+            display: inline-block;
+            animation: bounce 2s infinite ease-in-out;
+        }
+
+        .bridge span:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .bridge span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .bridge span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        .bridge span:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+        .bridge span:nth-child(5) {
+            animation-delay: 0.8s;
+        }
+        .bridge span:nth-child(6) {
+            animation-delay: 1s;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+ .fun-text {
+            font-family: 'Pacifico', cursive;
+            font-size: 50px;
+            color: #ff69b4;
+            text-shadow: 3px 3px 10px #ff1493, -3px -3px 10px #87cefa;
+            animation: colorPulse 3s infinite;
+        }
+ @keyframes colorPulse {
+            0%, 100% {
+                text-shadow: 3px 3px 10px #ff1493, -3px -3px 10px #87cefa;
+                color: #ff69b4;
+            }
+            50% {
+                text-shadow: 3px 3px 10px #87cefa, -3px -3px 10px #ff1493;
+                color: #87cefa;
+            }
+        }
+  </style>
+</head>
+<body>
+
+  <!-- Seção do Vídeo -->
+  <div class="section video">
+    <h1 style="color:#1e90ff">🎉 Você está convidado! 🎉</h1>
+    <video controls autoplay muted loop>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo HTML5.
+    </video>
+     </div>
+
+  <!-- Seção de Nome, Idade, Gifs Infantis e Carrossel -->
+  <div class="section info">
+    
+
+    <div class="carousel">
+      <div class="slides">
+        <img src="arthur.jpeg" alt="Arthur 1">
+        <img src="arthur2.jpeg" alt="Arthur 2">
+        <img src="arthur.jpeg" alt="Arthur 3">
+      </div>
+    </div>
+ <div class="gifs">
+      
+      <img src="nuvem.gif" alt="GIF Dir" class="gif-dir">
+<img src="sol.gif" alt="GIF Direito" class="gif-esquerdo">
+<img src="nuvem.gif" alt="GIF Esquerdo" class="gif-direito">
+  <div class="bridge">
+        <span>L</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+   
+    </div>
+    </div>
+   
+
+    <div class="fun-text">Vai fazer 1 aninho! 🎂🎈</div>
+
+    <a class="map-button" href="https://www.google.com/maps/place/Parque+Ibirapuera/" target="_blank">
+      📍 Ver Local no Mapa
+    </a>
+    <a class="map-button" href="https://wa.me/55SEUNUMERO?text=Olá!%20Confirmo%20presença%20no%20aniversário%20do%20Arthur!%20🎉" target="_blank">
+      ✅ Confirmar Presença
+    </a>
+  </div>
+
+  <!-- Seção de Contador -->
+  <div class="section countdown">
+    <h1>⏰ Falta pouco para a festa!</h1>
+    <div class="countdown-box" id="countdown">
+      Calculando...
+    </div>
+  </div>
+
+  <script>
+    function atualizarContador() {
+      const dataFesta = new Date("2025-04-21T00:00:00").getTime();
+      const agora = new Date().getTime();
+      const distancia = dataFesta - agora;
+
+      if (distancia < 0) {
+        document.getElementById("countdown").innerHTML = "🎉 A festa começou! 🎉";
+        return;
+      }
+
+      const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+      const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML =
+        `<span>${dias}</span> dias, <span>${horas}</span>h <span>${minutos}</span>min <span>${segundos}</span>s`;
+    }
+
+    setInterval(atualizarContador, 1000);
+    atualizarContador();
+  </script>
+
+</body>
+</html>
